@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "de56ab37-2932-4d30-a080-2247e0e7be0b",
+		"name": "Camel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "postEmployee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<employee>\n\t<empName>Johan</empName>\n\t<empId>123</empId>\n</employee>"
+				},
+				"url": {
+					"raw": "http://localhost:7199/company/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7199",
+					"path": [
+						"company",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
